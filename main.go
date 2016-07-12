@@ -13,8 +13,9 @@ func main() {
 }
 
 //Solution solves the problem.
-func Solution(n int64) int {
-	strBin := strconv.FormatInt(n, 2)
+func Solution(n int) int {
+	n64 := int64(n)
+	strBin := strconv.FormatInt(n64, 2)
 	longest := 0
 	current := 0
 	for i := 0; i < len(strBin); i++ {
